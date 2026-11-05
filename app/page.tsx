@@ -18,7 +18,7 @@ export default function Home() {
     setLoading(true);
     setMessage("");
 
-    const { error } = await supabase.from("reservations").insert({
+    const { error } = await supabase.from("bookings").insert({
       customer_name: name,
       phone,
       service,
